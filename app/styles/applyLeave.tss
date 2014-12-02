@@ -1,4 +1,5 @@
 
 ".formView": {
-  layout: 'horizontal'
+  layout: 'horizontal',
+  height: Ti.UI.SIZE
 }

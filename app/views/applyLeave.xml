@@ -3,30 +3,30 @@
 		<Require id="topbar" src="common/navbar"></Require>
 		<View id="applyLeaveView" layout="vertical">
 			<View id="leaveTypeView" class="formView" >
-				<Label id="leaveTypeLabel" text="Leave Type"/>
-				<Label id="leaveTypeSelectTool" text="Select Leave Type"/>
+				<Label id="leaveTypeLabel" text="Leave Type" height="Ti.UI.SIZE"/>
+				<Label id="leaveTypeSelectTool" text="Select Leave Type" height="Ti.UI.SIZE"/>
 			</View>
 			<View id="fromDateView" class="formView">
-				<Label id="fromDate" text="From Date"/>
-				<View id="dateCalendar"/>
+				<Label id="fromDate" text="From Date" height="Ti.UI.SIZE"/>
+				<View id="dateCalendar" height="Ti.UI.SIZE"/>
 			</View>
 			<View id="toDateView" class="formView">
-				<Label id="toDate" text="To Date"/>
-				<View id="dateCalendar"/>
+				<Label id="toDate" text="To Date" height="Ti.UI.SIZE"/>
+				<View id="dateCalendar" height="Ti.UI.SIZE"/>
 			</View>
 			<View id="isFullDayView" class="formView">
-				<Label id="firstHalf"/>
-				<ImageView id="firstHalfCheckbox"/>
-				<Label id="secondHalf"/>
-				<ImageView id="secondHalfCheckbox"/>
+				<Label id="firstHalf" text="First Half" height="Ti.UI.SIZE"/>
+				<ImageView id="firstHalfCheckbox" height="Ti.UI.SIZE"/>
+				<Label id="secondHalf" text="Second Half" height="Ti.UI.SIZE"/>
+				<ImageView id="secondHalfCheckbox" height="Ti.UI.SIZE"/>
 			</View>
 			<View id="noOfDaysView" class="formView">
-				<Label id="noOfDaysLabel"/>
-				<TextField id="noOfDays"/>
+				<Label id="noOfDaysLabel" text="Days" height="Ti.UI.SIZE"/>
+				<TextField id="noOfDays" width="80" height="60"/>
 			</View>
 			<View id="reasonView" class="formView">
-				<Label id="reasonLabel"/>
-				<TextArea id="reasonText"></TextArea>
+				<Label id="reasonLabel" text="Reason" height="Ti.UI.SIZE"/>
+				<TextArea id="reasonText" height="Ti.UI.SIZE" hintText="enter your reason for leave"></TextArea>
 			</View>
 		</View>
 	</Window>
