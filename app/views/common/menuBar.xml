@@ -1,0 +1,9 @@
+<Alloy>
+	<View id="tableView">
+		<TableView id="menu">
+			<TableViewRow id="applyLeave" class="rowStyle"></TableViewRow>
+			<TableViewRow id="cancelLeave" class="rowStyle"></TableViewRow>
+			<TableViewRow id="logout" class="rowStyle"></TableViewRow>
+		</TableView>
+	</View>
+</Alloy>

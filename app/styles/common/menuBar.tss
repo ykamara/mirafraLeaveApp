@@ -1,0 +1,23 @@
+"#tableView": {
+	 top:0,
+	 left:0,
+	 width:240
+},
+"#menu": {
+	 separatorColor:"ffffff",
+	 backgroundColor:"#D96009",
+	 height:"100%",
+	 top:0
+},
+"#applyLeave": {
+	title:"Apply Leave"
+},
+"#cancelLeave":{
+	title:"Cancel Leave"
+},
+"#logout": {
+	title: "Logout"
+},
+".rowStyle": {
+	color : "#ffffff"
+}

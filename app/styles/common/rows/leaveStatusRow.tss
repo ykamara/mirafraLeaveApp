@@ -1,0 +1,12 @@
+
+".rowData" : {
+	font: {fontSize: '8', fontWeight: 'regular' },
+	ellipsize: false,
+	wordWrap: true
+	
+  
+},
+".headerRowFont" : {
+	font: {fontSize: '10', fontFamily:'helveticaNeue', fontWeight: 'bold' },
+	color: "white"
+}

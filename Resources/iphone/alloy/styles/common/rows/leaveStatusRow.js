@@ -1,0 +1,1 @@
+module.exports = [{"isClass":true,"priority":10000.0026,"key":"rowData","style":{font:{fontSize:"8",fontWeight:"regular",},ellipsize:false,wordWrap:true,}},{"isClass":true,"priority":10000.0027,"key":"headerRowFont","style":{font:{fontSize:"10",fontFamily:"helveticaNeue",fontWeight:"bold",},color:"white",}}];

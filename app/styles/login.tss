@@ -1,0 +1,65 @@
+"#parentView":{
+	 width:"100%",
+	 height:"100%",
+	 backgroundColor:"white"
+},
+"#mirafra_logo": {
+	 image:"common/mirafra-logo.png",
+	 top: 30,
+	 width: Ti.UI.SIZE,
+	 height:Ti.UI.SIZE
+},
+"#loginView": {
+	  left:40,
+	  right:40,
+	  layout:"vertical",
+	  borderColor:"#D96009",
+	  borderRadius:6,
+	  borderWidth:1,
+	  height:"40%",
+	  backgroundColor:"#eda888"
+},
+"#loginLabel": {
+	 backgroundColor:"#D96009",
+	 color:"white",
+	 height:20,
+	 top:0,
+	 left:20,
+	 right:20,
+	 textAlign:"center"
+},
+"#Username": {
+	 hintText:"Username",
+	 left:10,
+	 right:10,
+	 top:20,
+	 height:30,
+	 backgroundColor:"white"
+},
+"#Password": {
+	 hintText:"Password",
+	 left:10,
+	 right:10,
+	 top:20,
+	 height:30,
+	 backgroundColor:"white"
+},
+"#buttonView": {
+	 left:10,
+	 right:10,
+	 top:10
+},
+"#clear": {
+	 left:0,
+	 backgroundColor:"#D96009",
+	 color:"white",
+	 width:80,
+	 borderRadius:6 
+},
+"#loginBtn": {
+	right:0,
+	backgroundColor:"#D96009",
+	color:"white",
+	width:80,
+	borderRadius:6 
+}

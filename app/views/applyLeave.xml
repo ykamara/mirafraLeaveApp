@@ -1,0 +1,33 @@
+<Alloy>
+	<Window layout="vertical" backgroundColor="white" navBarHidden="true" fullscreen="true">
+		<Require id="topbar" src="common/navbar"></Require>
+		<View id="applyLeaveView" layout="vertical">
+			<View id="leaveTypeView" class="formView" >
+				<Label id="leaveTypeLabel" text="Leave Type"/>
+				<Label id="leaveTypeSelectTool" text="Select Leave Type"/>
+			</View>
+			<View id="fromDateView" class="formView">
+				<Label id="fromDate" text="From Date"/>
+				<View id="dateCalendar"/>
+			</View>
+			<View id="toDateView" class="formView">
+				<Label id="toDate" text="To Date"/>
+				<View id="dateCalendar"/>
+			</View>
+			<View id="isFullDayView" class="formView">
+				<Label id="firstHalf"/>
+				<ImageView id="firstHalfCheckbox"/>
+				<Label id="secondHalf"/>
+				<ImageView id="secondHalfCheckbox"/>
+			</View>
+			<View id="noOfDaysView" class="formView">
+				<Label id="noOfDaysLabel"/>
+				<TextField id="noOfDays"/>
+			</View>
+			<View id="reasonView" class="formView">
+				<Label id="reasonLabel"/>
+				<TextArea id="reasonText"></TextArea>
+			</View>
+		</View>
+	</Window>
+</Alloy>

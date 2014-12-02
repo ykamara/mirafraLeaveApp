@@ -1,0 +1,10 @@
+<Alloy>
+	<TableViewRow id="row" class="container" backgroundColor="white" selectionStyle="none">
+		<View id="rowDetails" layout="horizontal" width="100%" height="100%">
+		<Label id="leaveType" top="10" bottom="10"  width="30%" color="black" class="rowData"></Label>
+		<Label id="total" top="10" bottom="10"  width="20%" textAlign="center" class="rowData"></Label> 
+		<Label id="available" top="10" bottom="10"  width="20%" textAlign="center" class="rowData"></Label>
+		<Label id="unapproved" top="10" bottom="10"  width="30%" textAlign="center" class="rowData"></Label> 
+		</View>
+	</TableViewRow>
+</Alloy>

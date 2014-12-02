@@ -1,0 +1,10 @@
+<Alloy>
+	<Window class="container" navBarHidden="true" fullscreen="true">
+		<Require id="menubar" src="common/menuBar"></Require>
+		<View id="mainView" width="100%" height="100%" top="0" left="0" backgroundColor="white" layout="vertical">
+			<Require id="topbar" src="common/navbar"></Require>
+			<TableView id="detailsView" top="10" backgroundColor="white" borderRadius="6" left="10" right="10" height="Ti.UI.SIZE" separatorColor="#eda888" borderColor="#D96009" borderWidth="1" scrollable="false">
+			</TableView>
+		</View>
+	</Window>
+</Alloy>
