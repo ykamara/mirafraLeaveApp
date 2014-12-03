@@ -1,32 +1,36 @@
 <Alloy>
 	<Window layout="vertical" backgroundColor="white" navBarHidden="true" fullscreen="true">
 		<Require id="topbar" src="common/navbar"></Require>
-		<View id="applyLeaveView" layout="vertical">
+		<View id="applyLeaveView" layout="vertical" backgroundColor="#eda888">
 			<View id="leaveTypeView" class="formView" >
 				<Label id="leaveTypeLabel" text="Leave Type" height="Ti.UI.SIZE"/>
-				<Label id="leaveTypeSelectTool" text="Select Leave Type" height="Ti.UI.SIZE"/>
+				<View id="leaveTypeSelectTool" height="40" left="30" width="Ti.UI.SIZE" backgroundColor="ffffff">
+					<Label text="Select Leave Type" height="40"></Label>
+				</View>
 			</View>
 			<View id="fromDateView" class="formView">
 				<Label id="fromDate" text="From Date" height="Ti.UI.SIZE"/>
-				<View id="dateCalendar" height="Ti.UI.SIZE"/>
+				<TextField id="fromDateVal" left="20" hintText="enter from date" backgroundColor="white"></TextField>
+				<ImageView id="fromDateCalendar" height="Ti.UI.SIZE" left="20" image='common/calendar.png' backgroundColor="white" width="30" height="30"/>
 			</View>
 			<View id="toDateView" class="formView">
 				<Label id="toDate" text="To Date" height="Ti.UI.SIZE"/>
-				<View id="dateCalendar" height="Ti.UI.SIZE"/>
+				<TextField id="toDateVal" left="20" hintText="enter to date" backgroundColor="white"></TextField>
+				<ImageView id="toDateCalendar" height="Ti.UI.SIZE" left="20" image='common/calendar.png' backgroundColor="white" width="30" height="30"/>
 			</View>
 			<View id="isFullDayView" class="formView">
 				<Label id="firstHalf" text="First Half" height="Ti.UI.SIZE"/>
-				<ImageView id="firstHalfCheckbox" height="Ti.UI.SIZE"/>
-				<Label id="secondHalf" text="Second Half" height="Ti.UI.SIZE"/>
-				<ImageView id="secondHalfCheckbox" height="Ti.UI.SIZE"/>
+				<ImageView id="firstHalfCheckbox" height="Ti.UI.SIZE" left="10" image="common/checkbox-checked.png" backgroundColor="white"/>
+				<Label id="secondHalf" text="Second Half" height="Ti.UI.SIZE" left="20"/>
+				<ImageView id="secondHalfCheckbox" height="Ti.UI.SIZE" left="10" image="common/checkbox-unchecked.png" backgroundColor="white"/>
 			</View>
 			<View id="noOfDaysView" class="formView">
 				<Label id="noOfDaysLabel" text="Days" height="Ti.UI.SIZE"/>
-				<TextField id="noOfDays" width="80" height="60"/>
+				<TextField id="noOfDays" width="80" height="60" left="20" backgroundColor="white"/>
 			</View>
 			<View id="reasonView" class="formView">
 				<Label id="reasonLabel" text="Reason" height="Ti.UI.SIZE"/>
-				<TextArea id="reasonText" height="Ti.UI.SIZE" hintText="enter your reason for leave"></TextArea>
+				<TextArea id="reasonText" height="90" hintText="enter your reason for leave" width="100" backgroundColor="white" maxLength="255"></TextArea>
 			</View>
 		</View>
 	</Window>

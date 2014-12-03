@@ -5,7 +5,7 @@
 			<View id="loginView">
 				<Label id="loginLabel"> Enter Your Login Details</Label>
 				<TextField id="Username"></TextField>
-				<TextField id="Password"></TextField>
+				<TextField id="Password" passwordMask="true"></TextField>
 				<View id="buttonView">
 					<Button id="clear" onClick="resetFields">Clear</Button>
 					<Button id="loginBtn" onClick="doLogin">Login</Button>
