@@ -1,5 +1,23 @@
+var httpClient = require('http');
+var url = "http://192.168.1.77:1500/password.njs";
+
+var params = {
+			page	 : 'Leave Status',
+			username : Titanium.App.Properties.getInt("loginUserID"),
+		};
+		
+httpClient.sendHttpRequest('POST', url, params, successCallback, null);
+
+
+function successCallback(resp){
+	var response = JSON.parse(resp);
+	console.log("@@@@@@@@@@@ " + JSON.stringify(response));
+};
+
+
+
 var leaveData = [{
-	type : 'LOP',
+ 	type : 'LOP',
 	opBal : 0,
 	alotted : 0,
 	availed : 0,

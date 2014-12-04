@@ -1,1 +1,1 @@
-module.exports = [{"isClass":true,"priority":10000.0002,"key":"formView","style":{layout:"horizontal",}}];
+module.exports = [{"isClass":true,"priority":10000.0002,"key":"formView","style":{layout:"horizontal",height:Ti.UI.SIZE,top:20,}}];

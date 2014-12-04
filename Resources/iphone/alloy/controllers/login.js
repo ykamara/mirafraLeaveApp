@@ -4,9 +4,27 @@ function Controller() {
         $.Password.value = "";
     }
     function doLogin() {
-        var username = $.Username.value;
-        var password = $.Password.value;
-        "mirafra" === username && "test" === password && Alloy.createController("index").getView().open();
+        function loginSuccess(resp) {
+            var response = JSON.parse(resp);
+            if (response.status) {
+                Ti.App.Properties.setInt("loginUserID", params.username);
+                Ti.App.Properties.setInt("leaveID", response.data[0].EmpId);
+                Ti.App.Properties.setBool("isManager", response.manager);
+                Alloy.createController("index").getView().open();
+            }
+        }
+        function loginError(resp) {
+            var response = JSON.parse(resp);
+            alert(response);
+        }
+        $.Username.value;
+        $.Password.value;
+        var params = {
+            username: $.Username.value,
+            password: $.Password.value,
+            page: "Athu"
+        };
+        httpClient.sendHttpRequest("POST", url, params, loginSuccess, loginError);
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "login";
@@ -76,7 +94,8 @@ function Controller() {
         top: 20,
         height: 30,
         backgroundColor: "white",
-        id: "Password"
+        id: "Password",
+        passwordMask: "true"
     });
     $.__views.loginView.add($.__views.Password);
     $.__views.buttonView = Ti.UI.createView({
@@ -110,6 +129,8 @@ function Controller() {
     doLogin ? $.__views.loginBtn.addEventListener("click", doLogin) : __defers["$.__views.loginBtn!click!doLogin"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
+    var httpClient = require("http");
+    var url = "http://192.168.1.77:1500/password.njs";
     __defers["$.__views.clear!click!resetFields"] && $.__views.clear.addEventListener("click", resetFields);
     __defers["$.__views.loginBtn!click!doLogin"] && $.__views.loginBtn.addEventListener("click", doLogin);
     _.extend($, exports);

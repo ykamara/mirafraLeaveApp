@@ -1,4 +1,8 @@
 function Controller() {
+    function successCallback(resp) {
+        var response = JSON.parse(resp);
+        console.log("@@@@@@@@@@@ " + JSON.stringify(response));
+    }
     function createHeaderRow(titles) {
         var headerRow = Alloy.createController("common/rows/leaveStatusRow", {
             data: titles,
@@ -63,6 +67,13 @@ function Controller() {
     $.__views.mainView.add($.__views.detailsView);
     exports.destroy = function() {};
     _.extend($, $.__views);
+    var httpClient = require("http");
+    var url = "http://192.168.1.77:1500/password.njs";
+    var params = {
+        page: "Leave Status",
+        username: Titanium.App.Properties.getInt("loginUserID")
+    };
+    httpClient.sendHttpRequest("POST", url, params, successCallback, null);
     var leaveStatusData = [ {
         leaveType: "Loss of Pay",
         totalLeaves: "20",

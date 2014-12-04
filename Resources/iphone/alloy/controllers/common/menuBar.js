@@ -13,31 +13,31 @@ function Controller() {
         id: "tableView"
     });
     $.__views.tableView && $.addTopLevelView($.__views.tableView);
-    var __alloyId0 = [];
+    var __alloyId1 = [];
     $.__views.applyLeave = Ti.UI.createTableViewRow({
         color: "#ffffff",
         title: "Apply Leave",
         id: "applyLeave"
     });
-    __alloyId0.push($.__views.applyLeave);
+    __alloyId1.push($.__views.applyLeave);
     $.__views.cancelLeave = Ti.UI.createTableViewRow({
         color: "#ffffff",
         title: "Cancel Leave",
         id: "cancelLeave"
     });
-    __alloyId0.push($.__views.cancelLeave);
+    __alloyId1.push($.__views.cancelLeave);
     $.__views.logout = Ti.UI.createTableViewRow({
         color: "#ffffff",
         title: "Logout",
         id: "logout"
     });
-    __alloyId0.push($.__views.logout);
+    __alloyId1.push($.__views.logout);
     $.__views.menu = Ti.UI.createTableView({
         separatorColor: "ffffff",
         backgroundColor: "#D96009",
         height: "100%",
         top: 0,
-        data: __alloyId0,
+        data: __alloyId1,
         id: "menu"
     });
     $.__views.tableView.add($.__views.menu);
